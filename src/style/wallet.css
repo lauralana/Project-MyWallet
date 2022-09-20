@@ -1,0 +1,114 @@
+body {
+  background-image: url('/src/style/background.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.all-info {
+  gap: 10px;
+}
+
+.header {
+  align-items: flex-start;
+  border: 1px solid red;
+  border-radius: 10px;
+  box-shadow: 0 3px 1em black;
+  display: flex;
+  flex-direction: column;
+  margin: 40px;
+  padding: 15px;
+}
+
+.headerValue {
+  display: flex;
+  gap: 10px;
+}
+
+.walletHeader {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.options {
+  align-content: center;
+  border: 1px solid red;
+  border-radius: 15px;
+  box-shadow: 0 3px 1em black;
+  color: #DAFDBA;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  height: 300px;
+  margin: 20px;
+  padding: 50px;
+  width: 280px;
+}
+
+.options button {
+  margin-left: 25px;
+  margin-top: 10px;
+  opacity: 70%;
+  padding: 8px;
+  width: 200px;
+}
+
+.options input {
+  display: flex;
+  flex-direction: column;
+  height: 20px;
+  opacity: 70%;
+  width: 190px;
+}
+
+.options select {
+  display: flex;
+  flex-direction: column;
+  height: 25px;
+  opacity: 70%;
+  padding: 3px;
+  width: 200px;
+}
+
+.options .value-coin {
+  display: flex;
+  gap: 10px;
+}
+
+.options .value-coin #coin {
+  width: 70px;
+}
+
+.option-table {
+  align-content: center;
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+}
+
+.table {
+  border: 1px solid red;
+  border-radius: 10px;
+  box-shadow: 0 3px 1em black;
+  color: #DAFDBA;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  padding: 25px;
+}
+
+thead tr {
+  display: flex;
+  gap: 20px;
+  justify-content: space-evenly;
+  text-transform: uppercase;
+}
+
+tbody tr {
+  display: flex;
+  gap: 20px;
+  justify-content: space-around;
+}
