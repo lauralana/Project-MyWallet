@@ -21,7 +21,7 @@ class Table extends Component {
             <th>Editar/Excluir</th>
           </tr>
         </thead>
-        <tbody>
+        <tbody className="table-body">
           {wallet.expenses.map((expense) => (
             <tr key={ expense.id }>
               <td>{ expense.description }</td>

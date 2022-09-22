@@ -3,6 +3,12 @@ import propTypes from 'prop-types';
 import { connect } from 'react-redux';
 import { userLogin } from '../redux/actions';
 import '../style/login.css';
+import {
+  UilGithub,
+  UilLinkedin,
+  UilWallet,
+} from '@iconscout/react-unicons';
+
 
 class Login extends React.Component {
   constructor() {
@@ -42,8 +48,12 @@ class Login extends React.Component {
   render() {
     const { email, password, btnDisabled } = this.state;
     return (
-      <div className="login">
-        <h1>TrybeWallet</h1>
+      <div className="bck">
+        <section className="login">
+          <div className="title">
+            <p>MyWallet</p>
+            <p className="walletIconTitle"> <UilWallet size={60}/> </p> 
+          </div>
         <form className="form-login">
           {/* <label htmlFor="email">
             Email: */}
@@ -79,6 +89,16 @@ class Login extends React.Component {
             Entrar
           </button>
         </form>
+        </section>
+        <footer>
+          <p> - Desenvolvido por: Laura Lana </p> 
+          <a href="https://github.com/lauralana" target="blanck" name="gitm" id="gitm" className="flex"> 
+             <UilGithub size={18} /> 
+          </a> 
+          <a href="https://www.linkedin.com/in/laura-lana/" target="blanck" name="gitm" id="gitm" className="flex"> 
+             <UilLinkedin size={18} /> 
+          </a>
+        </footer>
       </div>
     );
   }

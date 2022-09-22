@@ -1,38 +1,86 @@
-.login {
-  align-items: center;
-  color: #DAFDBA;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  padding-top: 200px;
+* {
+  margin: 0;
+  padding: 0;
 }
 
-body .login {
-  align-items: center;
-  background-image: url('/src/style/background.svg');
+.bck {
+  background-image: url('/src/style/bck.svg');
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  display: flex;
+  flex-direction: column;
   height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+.login {
+  align-items: center;
+  background-color:#560090;
+  border-radius: 10px;
+  box-shadow: 0 1.5px 0.5em #560090;
+  color: #140021;
+  display: flex;
+  flex-direction: column;
+  font-family: 'Krona One';
+  font-size:45px;
+  gap: 30px;
+  height: 250px;
+  margin: 60px;
+  margin-left: 70vw;
+  margin-top: 12vw;
+  padding: 60px;
+  width: 280px;
+}
+
+.title {
+  display: flex;
+  gap: 15px;
+}
+
+.walletIconTitle {
+  transform: rotate(-35deg)
+}
+
+.walletIconTitle:hover {
+  transform: rotate(0deg)
 }
 
 .form-login {
   align-items: center;
-  color: #DAFDBA;
   display: flex;
   flex-direction: column;
-  gap: 15px;
+  gap: 25px;
 }
 
 .form-login input {
   height: 25px;
-  opacity: 70%;
+  opacity: 50%;
   width: 250px;
 }
 
 .form-login button {
   height: 30px;
-  opacity: 70%;
   width: 100px;
+  color:#140021;
 }
 
+.form-login button:hover {
+  box-shadow: 0 2px 1em black;
+  height: 35px;
+  width: 105px;
+}
+
+footer {
+  align-items: center;
+  bottom: 1.5%;
+  color:#320b50;
+  display: flex;
+  font-family: 'Krona One';
+  font-size: small;
+  gap: 5px;
+  left: 50%;
+  position: absolute;
+  opacity: 45%;
+}

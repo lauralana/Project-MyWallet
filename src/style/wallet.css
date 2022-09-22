@@ -1,25 +1,49 @@
-body {
-  background-image: url('/src/style/background.svg');
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
-}
-
 .all-info {
   gap: 10px;
+  background-color: #140021;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+}
+
+.logo {
+  color:whitesmoke;
+  font-size: 50px;
+  font-family: 'Krona One';
+  margin-left: 145px;
+}
+
+.logo-clientInfo {
+display: flex;
+align-items: center;
+}
+
+.walletIcon {
+color:whitesmoke; 
+transform: rotate(-35deg)
+}
+
+.walletIcon:hover {
+  transform: rotate(0deg)
+  }
+
+  
+.p {
+display: flex;
+gap: 15px;
 }
 
 .header {
   align-items: flex-start;
   border-radius: 10px;
+  border: 1px solid #560090;
   box-shadow: 0 3px 1em black;
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
   margin: 40px;
   padding: 15px;
+  gap: 25px;
 }
 
 .headerValue {
@@ -28,16 +52,15 @@ body {
 }
 
 .walletHeader {
-  display: flex;
-  justify-content: flex-end;
+  margin-left: 52%;
 }
 
 .options {
   align-content: center;
-  border: 1px solid red;
+  background-color:#682694;
   border-radius: 15px;
   box-shadow: 0 3px 1em black;
-  color: #DAFDBA;
+  color: #140021;
   display: flex;
   flex-direction: column;
   gap: 25px;
@@ -48,18 +71,23 @@ body {
 }
 
 .options button {
+  height: 50px;
   margin-left: 25px;
   margin-top: 10px;
-  opacity: 70%;
+  opacity: 50%;
   padding: 8px;
   width: 200px;
+}
+
+.options button:hover {
+  box-shadow: 0 3px 1em black;
 }
 
 .options input {
   display: flex;
   flex-direction: column;
   height: 20px;
-  opacity: 70%;
+  opacity: 50%;
   width: 190px;
 }
 
@@ -67,7 +95,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 25px;
-  opacity: 70%;
+  opacity: 50%;
   padding: 3px;
   width: 200px;
 }
@@ -84,30 +112,55 @@ body {
 .option-table {
   align-content: center;
   display: flex;
-  gap: 50px;
+  gap: 45px;
   justify-content: center;
 }
 
 .table {
-  border: 1px solid red;
   border-radius: 10px;
   box-shadow: 0 3px 1em black;
-  color: #DAFDBA;
+  color: whitesmoke;
   display: flex;
   flex-direction: column;
+  gap:15px;
   margin: 20px;
+  margin-left: 75px;
   padding: 25px;
 }
 
-thead tr {
+thead {
+  background-color:#682694;
+  border-radius: 10px;
+  align-items: center;
   display: flex;
-  gap: 20px;
   justify-content: space-evenly;
   text-transform: uppercase;
 }
 
-tbody tr {
-  display: flex;
-  gap: 20px;
-  justify-content: space-around;
+tr {
+  align-items: center;
+  background-color:#682694;
+  border-radius: 10px;
+  gap: 40px;
+  width: 125vh;
 }
+
+th {
+  padding: 5px;
+  width: 11%;
+}
+
+td {
+  background-color:#682694;
+  border-radius: 10px;
+  padding: 5px;
+  text-align: center;
+  width: 11%;
+}
+
+tbody {
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+}
+
