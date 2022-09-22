@@ -47,7 +47,6 @@ class WalletForm extends Component {
     const { currencies, editor } = wallet;
     const { value, description } = this.state;
     return (
-      <div>
 
         <form className="options">
           <label htmlFor="tag">
@@ -140,7 +139,6 @@ class WalletForm extends Component {
           ) }
 
         </form>
-      </div>
     );
   }
 }

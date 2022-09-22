@@ -8,15 +8,29 @@
 
 .logo {
   color:whitesmoke;
-  font-size: 50px;
+  font-size: 3rem;
   font-family: 'Krona One';
-  margin-left: 145px;
+  margin-left: 20%;
 }
 
 .logo-clientInfo {
 display: flex;
 align-items: center;
-width: 100%;
+max-width: 100%;
+height: 20%;
+justify-content: space-between;
+}
+
+.header {
+  align-items: flex-start;
+  border-radius: 10px;
+  border: 1px solid #560090;
+  box-shadow: 0 3px 1em black;
+  color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  gap: 25px;
 }
 
 .walletIcon {
@@ -32,20 +46,9 @@ transform: rotate(-35deg)
 .p {
 display: flex;
 gap: 15px;
+align-items: center;
 }
 
-.header {
-  align-items: flex-start;
-  border-radius: 10px;
-  border: 1px solid #560090;
-  box-shadow: 0 3px 1em black;
-  color: whitesmoke;
-  display: flex;
-  flex-direction: column;
-  margin: 40px;
-  padding: 15px;
-  gap: 25px;
-}
 
 .headerValue {
   display: flex;
@@ -53,7 +56,20 @@ gap: 15px;
 }
 
 .walletHeader {
-  margin-left: 52%;
+  margin-right: 5%;
+}
+
+.option-table {
+  align-content: center;
+  display: flex;
+  min-height: 79.5%;
+}
+
+.div-form {
+  display: flex;
+  min-height: 79.5%;
+  margin-left: 0.5%;
+  align-items: center;
 }
 
 .options {
@@ -64,17 +80,14 @@ gap: 15px;
   color: #140021;
   display: flex;
   flex-direction: column;
-  gap: 25px;
-  height: 300px;
-  margin: 20px;
-  padding: 50px;
-  width: 280px;
+  gap: 15px;
+  height: 51%;
+  padding: 20px;
 }
 
 .options button {
   height: 50px;
   margin-left: 25px;
-  margin-top: 10px;
   opacity: 50%;
   padding: 8px;
   width: 200px;
@@ -110,25 +123,17 @@ gap: 15px;
   width: 70px;
 }
 
-.option-table {
-  align-content: center;
+.div-table {
   display: flex;
-  gap: 45px;
-  height: auto;
   justify-content: center;
-  width:100%;
+  width: 100%;
 }
 
 .table {
   border-radius: 10px;
-  box-shadow: 0 3px 1em black;
   color: whitesmoke;
-  display: flex;
-  flex-direction: column;
-  gap:15px;
-  margin: 20px;
-  margin-left: 75px;
-  padding: 25px;
+  padding: 2%;
+  width: 100%;
 }
 
 thead {
@@ -138,14 +143,15 @@ thead {
   display: flex;
   justify-content: space-evenly;
   text-transform: uppercase;
+  width: 100%;
+  margin-bottom: 1%;
 }
 
 tr {
   align-items: center;
   background-color:#682694;
   border-radius: 10px;
-  gap: 40px;
-  width: 125vh;
+  width: 100%;
 }
 
 th {
@@ -165,5 +171,5 @@ tbody {
   display: flex;
   flex-direction: column;
   gap:10px;
+  width: 100%;
 }
-

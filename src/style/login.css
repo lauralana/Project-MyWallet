@@ -9,7 +9,8 @@
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
   height: 100vh;
   width: 100%;
   margin: 0;
@@ -26,12 +27,13 @@
   font-family: 'Krona One';
   font-size:45px;
   gap: 30px;
-  height: 250px;
-  margin: 60px;
-  margin-left: 70vw;
-  margin-top: 12vw;
+  height: 16rem;
+  /* margin: 60px; */
+  /* margin-left: 30%; */
+  margin-right: 5%;
+  /* margin-top: 10%; */
   padding: 60px;
-  width: 280px;
+  width: 25rem;
 }
 
 .title {
@@ -61,7 +63,6 @@
 }
 
 .form-login button {
-  opacity: 50%;
   height: 30px;
   width: 100px;
   color:#140021;

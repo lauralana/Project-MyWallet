@@ -9,6 +9,7 @@ import {
   UilWallet,
 } from '@iconscout/react-unicons';
 
+
 class Wallet extends React.Component {
   render() {
     return (
@@ -16,17 +17,17 @@ class Wallet extends React.Component {
         <section className="logo-clientInfo">
           <div className="p">
           <p className="logo">MyWallet</p>
-          <p className="walletIcon"> <UilWallet size={60}/> </p> 
+          <p className="walletIcon"> <UilWallet size={50}/> </p> 
           </div>
           <div className="walletHeader">
             <Header />
           </div>
         </section>
         <section className="option-table">
-          <div>
+          <div className='div-form'>
             <WalletForm />
           </div>
-          <div>
+          <div className='div-table'>
             <Table />
           </div>
         </section>

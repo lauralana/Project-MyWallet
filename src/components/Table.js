@@ -2,7 +2,6 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { deleteInfo, editInfo } from '../redux/actions';
-import { UilTrashAlt, UilEditAlt } from '@iconscout/react-unicons'
 
 class Table extends Component {
   render() {
@@ -43,7 +42,7 @@ class Table extends Component {
                   type="button"
                   onClick={ () => propsEditInfo(expense.id) }
                 >
-                 <UilEditAlt size={23}/>
+                  Editar
                 </button>
 
                 <button
@@ -51,7 +50,7 @@ class Table extends Component {
                   type="button"
                   onClick={ () => propsDeleteInfo(expense.id) }
                 >
-                <UilTrashAlt size={23}/>
+                  Excluir
                 </button>
               </td>
             </tr>
