@@ -9,7 +9,6 @@ import {
   UilWallet,
 } from '@iconscout/react-unicons';
 
-
 class Wallet extends React.Component {
   render() {
     return (
