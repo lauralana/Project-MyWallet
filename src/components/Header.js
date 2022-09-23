@@ -18,7 +18,7 @@ class Header extends Component {
     return (
       <div className="header">
         <div class="p">
-        <UilUser />npm
+        <UilUser />
         <h4 data-testid="email-field">{ user.email }</h4>
         </div>
         <div className="headerValue">

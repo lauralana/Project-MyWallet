@@ -47,8 +47,8 @@ class WalletForm extends Component {
     const { currencies, editor } = wallet;
     const { value, description } = this.state;
     return (
-
         <form className="options">
+          <p>Nova despesa</p>
           <label htmlFor="tag">
             Categoria:
             <select
@@ -137,7 +137,6 @@ class WalletForm extends Component {
               Adicionar despesa
             </button>
           ) }
-
         </form>
     );
   }

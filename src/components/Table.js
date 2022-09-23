@@ -2,6 +2,7 @@ import PropTypes from 'prop-types';
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import { deleteInfo, editInfo } from '../redux/actions';
+import { UilEditAlt, UilTrashAlt } from '@iconscout/react-unicons'
 
 class Table extends Component {
   render() {
@@ -17,7 +18,6 @@ class Table extends Component {
             <th>Moeda</th>
             <th>Câmbio utilizado</th>
             <th>Valor convertido</th>
-            <th>Moeda de conversão</th>
             <th>Editar/Excluir</th>
           </tr>
         </thead>
@@ -28,30 +28,22 @@ class Table extends Component {
               <td>{ expense.tag }</td>
               <td>{ expense.method }</td>
               <td>{ Number(expense.value).toFixed(2) }</td>
-              <td>{ expense.exchangeRates[expense.currency].name }</td>
+              <td>{ expense.exchangeRates[expense.currency].code}</td>
               <td>{ Number(expense.exchangeRates[expense.currency].ask).toFixed(2) }</td>
               <td>
                 { (Number(expense.value)
               * Number(expense.exchangeRates[expense.currency].ask)).toFixed(2)}
 
               </td>
-              <td>BRL</td>
-              <td>
-                <button
-                  data-testid="edit-btn"
-                  type="button"
+              {/* os elementos abaixo funcionam como btn */}
+              <td className='btn-icons'>
+                  <UilEditAlt 
                   onClick={ () => propsEditInfo(expense.id) }
-                >
-                  Editar
-                </button>
+                  />
 
-                <button
-                  data-testid="delete-btn"
-                  type="button"
-                  onClick={ () => propsDeleteInfo(expense.id) }
-                >
-                  Excluir
-                </button>
+                  <UilTrashAlt 
+                   onClick={ () => propsDeleteInfo(expense.id) }
+                  />
               </td>
             </tr>
           ))}

@@ -16,7 +16,7 @@
 .logo-clientInfo {
 display: flex;
 align-items: center;
-max-width: 100%;
+max-width: 99%;
 height: 20%;
 justify-content: space-between;
 }
@@ -68,8 +68,9 @@ align-items: center;
 .div-form {
   display: flex;
   min-height: 79.5%;
-  margin-left: 0.5%;
-  align-items: center;
+  margin-left: 2.5%;
+  padding: 2%;
+ 
 }
 
 .options {
@@ -80,17 +81,24 @@ align-items: center;
   color: #140021;
   display: flex;
   flex-direction: column;
-  gap: 15px;
-  height: 51%;
-  padding: 20px;
+  font-size: 18px;
+  gap: 8%;
+  height: 73%;
+  padding: 30px;
+}
+
+.options p {
+  font-size: 25px;
+  font-family: 'Krona One';
+  text-align: center;
 }
 
 .options button {
-  height: 50px;
-  margin-left: 25px;
+  margin-left: 45px;
+  margin-top: 2%;
   opacity: 50%;
   padding: 8px;
-  width: 200px;
+  width: 180px;
 }
 
 .options button:hover {
@@ -100,7 +108,7 @@ align-items: center;
 .options input {
   display: flex;
   flex-direction: column;
-  height: 20px;
+  height: 30px;
   opacity: 50%;
   width: 190px;
 }
@@ -108,9 +116,9 @@ align-items: center;
 .options select {
   display: flex;
   flex-direction: column;
-  height: 25px;
+  height: 33px;
   opacity: 50%;
-  padding: 3px;
+  padding: 6px;
   width: 200px;
 }
 
@@ -125,23 +133,28 @@ align-items: center;
 
 .div-table {
   display: flex;
-  justify-content: center;
+
   width: 100%;
 }
 
-.table {
+/* .table {
   border-radius: 10px;
   color: whitesmoke;
   padding: 2%;
-  width: 100%;
+  width: 90%;
+} */
+.table {
+  border: 1px solid rgb(221, 225, 221);
+  border-radius: 15px;
+  padding: 2%;
+  width: 90%;
 }
 
-thead {
+/* thead {
   background-color:#682694;
   border-radius: 10px;
   align-items: center;
   display: flex;
-  justify-content: space-evenly;
   text-transform: uppercase;
   width: 100%;
   margin-bottom: 1%;
@@ -157,19 +170,44 @@ tr {
 th {
   padding: 5px;
   width: 11%;
+  border: 1px solid red;
 }
 
 td {
   background-color:#682694;
+  border: 1px solid red;
   border-radius: 10px;
   padding: 5px;
   text-align: center;
-  width: 11%;
+  width: 5%;
 }
 
 tbody {
   display: flex;
   flex-direction: column;
+  flex-wrap: nowrap;
   gap:10px;
   width: 100%;
+} */
+
+th , td {
+  border: 1px solid red;
+  color:whitesmoke;
+  padding: 10px 20px;
+  text-align: center;
+}
+
+.btn-icons {
+  color:whitesmoke;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  justify-content: center;
+}
+
+tr:hover { background-color: whitesmoke;}
+
+th {
+  background-color:#682694;
+  color:whitesmoke;
 }
