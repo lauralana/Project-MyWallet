@@ -75,7 +75,7 @@ class Login extends React.Component {
             type="password"
             id="pass"
             name="password"
-            placeholder="password"
+            placeholder="senha"
             value={ password }
             onChange={ this.onHandleChange }
           />

@@ -137,27 +137,21 @@ align-items: center;
   width: 100%;
 }
 
-/* .table {
+.table {
   border-radius: 10px;
   color: whitesmoke;
   padding: 2%;
   width: 90%;
-} */
-.table {
-  border: 1px solid rgb(221, 225, 221);
-  border-radius: 15px;
-  padding: 2%;
-  width: 90%;
-}
+} 
 
-/* thead {
+thead {
   background-color:#682694;
   border-radius: 10px;
   align-items: center;
   display: flex;
   text-transform: uppercase;
   width: 100%;
-  margin-bottom: 1%;
+  margin-bottom: 2%;
 }
 
 tr {
@@ -188,7 +182,15 @@ tbody {
   flex-wrap: nowrap;
   gap:10px;
   width: 100%;
-} */
+}
+
+/* .table {
+  border: 1px solid rgb(221, 225, 221);
+  border-radius: 15px;
+  min-height: 562px;
+  padding: 2%;
+  width: 100%;
+}
 
 th , td {
   border: 1px solid red;
@@ -205,9 +207,9 @@ th , td {
   justify-content: center;
 }
 
-tr:hover { background-color: whitesmoke;}
+/* tr:hover { background-color: whitesmoke;} */
 
-th {
+/* th {
   background-color:#682694;
   color:whitesmoke;
-}
+}  */

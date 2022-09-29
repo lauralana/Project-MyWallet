@@ -11,26 +11,34 @@ class Table extends Component {
       <table className="table">
         <thead>
           <tr>
-            <th>Descrição</th>
+            {/* <th>Descrição</th>
             <th>Categoria</th>
             <th>Método de pagamento</th>
             <th>Valor</th>
             <th>Moeda</th>
             <th>Câmbio utilizado</th>
             <th>Valor convertido</th>
-            <th>Editar/Excluir</th>
+            <th>Editar/Excluir</th> */}
+            <th style={ { width: '150px' } }>Descrição</th>
+            <th style={ { width: '150px' } }>Categoria</th>
+            <th style={ { width: '100px' } }>Método de pagamento</th>
+            <th style={ { width: '100px' } }>Valor</th>
+            <th style={ { width: '50px' } }>Moeda</th>
+            <th style={ { width: '80px' } }>Câmbio utilizado</th>
+            <th style={ { width: '100px' } }>Valor convertido</th>
+            <th style={ { width: '100px' } }>Editar/Excluir </th>
           </tr>
         </thead>
         <tbody className="table-body">
           {wallet.expenses.map((expense) => (
             <tr key={ expense.id }>
-              <td>{ expense.description }</td>
+              <td style={ { maxWidth: '150px' } }>{ expense.description }</td>
               <td>{ expense.tag }</td>
               <td>{ expense.method }</td>
-              <td>{ Number(expense.value).toFixed(2) }</td>
+              <td style={ { maxWidth: '100px' } }>{ Number(expense.value).toFixed(2) }</td>
               <td>{ expense.exchangeRates[expense.currency].code}</td>
               <td>{ Number(expense.exchangeRates[expense.currency].ask).toFixed(2) }</td>
-              <td>
+              <td style={ { maxWidth: '100px' } }>
                 { (Number(expense.value)
               * Number(expense.exchangeRates[expense.currency].ask)).toFixed(2)}
 
