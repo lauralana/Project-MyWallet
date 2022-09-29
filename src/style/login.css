@@ -75,7 +75,8 @@
 footer {
   align-items: center;
   bottom: 1.5%;
-  color:#320b50;
+  color: whitesmoke;
+  /* color:#320b50; */
   display: flex;
   font-family: 'Krona One';
   font-size: small;

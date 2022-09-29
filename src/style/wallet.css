@@ -96,20 +96,23 @@ align-items: center;
 .options button {
   margin-left: 45px;
   margin-top: 2%;
-  opacity: 50%;
+  /* opacity: 50%; */
   padding: 8px;
   width: 180px;
 }
 
 .options button:hover {
-  box-shadow: 0 3px 1em black;
+  /* box-shadow: 0 3px 1em black; */
+  font-size: 15px;
+  height: 35px;
+  width: 190px;
 }
 
 .options input {
   display: flex;
   flex-direction: column;
   height: 30px;
-  opacity: 50%;
+  /* opacity: 50%; */
   width: 190px;
 }
 
@@ -117,7 +120,7 @@ align-items: center;
   display: flex;
   flex-direction: column;
   height: 33px;
-  opacity: 50%;
+  /* opacity: 50%; */
   padding: 6px;
   width: 200px;
 }

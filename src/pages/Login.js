@@ -93,10 +93,11 @@ class Login extends React.Component {
         <footer>
           <p> - Desenvolvido por: Laura Lana </p> 
           <a href="https://github.com/lauralana" target="blanck" name="gitm" id="gitm" className="flex"> 
-             <UilGithub size={18} /> 
+             <UilGithub size={18} color="whitesmoke"/> 
+             {/* a versao original o color é omitido, aq é só pro vercel */}
           </a> 
           <a href="https://www.linkedin.com/in/laura-lana/" target="blanck" name="gitm" id="gitm" className="flex"> 
-             <UilLinkedin size={18} /> 
+             <UilLinkedin size={18} color="whitesmoke"/> 
           </a>
         </footer>
       </div>
