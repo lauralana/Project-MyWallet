@@ -45,5 +45,5 @@ Ao utilizar essa aplicação um usuário deverá ser capaz de:
   }
   ```
 
- >Se você quiser aprender mais informações sobre a API, veja a [documentação](https://docs.awesomeapi.com.br/api-de-moedas).
- >OBS: esse projeto possui pequenas divergências em relação ao projeto original proposto pela Trybe.
+ >Se você quiser aprender mais informações sobre a API, veja a [documentação](https://docs.awesomeapi.com.br/api-de-moedas). <br>
+ >OBS : esse projeto possui pequenas divergências em relação ao projeto original proposto pela Trybe.
