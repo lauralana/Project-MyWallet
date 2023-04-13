@@ -18,7 +18,7 @@ Ao utilizar essa aplicação um usuário deverá ser capaz de:
   
   :information_source: Para inicializar o projeto, rode o comando `npm start`
   
-## Informações adicionais: 
+## Informações adicionais : 
  <details><summary> Clique aqui para ver mais </summary>
   Para esse projeto foi utilizada a API, awesomeapi API de Cotações para realizar a busca de câmbio de moedas. <br>
  ENDPOINT:  <https://economia.awesomeapi.com.br/json/all>
@@ -49,3 +49,6 @@ Ao utilizar essa aplicação um usuário deverá ser capaz de:
  >Se você quiser aprender mais informações sobre a API, veja a [documentação](https://docs.awesomeapi.com.br/api-de-moedas). <br><br>
  >OBS : esse projeto possui pequenas divergências em relação ao projeto original proposto pela Trybe.
   </details>
+  
+  ## Deploy com Versel : 
+  <https://trybe-wallet-tau.vercel.app/>
