@@ -11,22 +11,22 @@ class Table extends Component {
       <table className="table">
         <thead>
           <tr>
-            {/* <th>Descrição</th>
+            <th>Descrição</th>
             <th>Categoria</th>
             <th>Método de pagamento</th>
             <th>Valor</th>
             <th>Moeda</th>
             <th>Câmbio utilizado</th>
             <th>Valor convertido</th>
-            <th>Editar/Excluir</th> */}
-            <th style={ { width: '150px' } }>Descrição</th>
+            <th>Editar/Excluir</th>
+            {/* <th style={ { width: '150px' } }>Descrição</th>
             <th style={ { width: '150px' } }>Categoria</th>
             <th style={ { width: '100px' } }>Método de pagamento</th>
             <th style={ { width: '100px' } }>Valor</th>
             <th style={ { width: '50px' } }>Moeda</th>
             <th style={ { width: '80px' } }>Câmbio utilizado</th>
             <th style={ { width: '100px' } }>Valor convertido</th>
-            <th style={ { width: '100px' } }>Editar/Excluir </th>
+            <th style={ { width: '100px' } }>Editar/Excluir </th> */}
           </tr>
         </thead>
         <tbody className="table-body">

@@ -14,18 +14,19 @@
 }
 
 .logo-clientInfo {
-display: flex;
-align-items: center;
-max-width: 99%;
-height: 20%;
-justify-content: space-between;
+  align-items: center;
+  display: flex;
+  height: 20%;
+  justify-content: space-between;
+  margin-right: 110px;
+  max-width: 99%;
 }
 
 .header {
   align-items: flex-start;
   border-radius: 10px;
   border: 1px solid #560090;
-  box-shadow: 0 3px 1em black;
+  /* box-shadow: 0 3px 1em black; */
   color: whitesmoke;
   display: flex;
   flex-direction: column;
@@ -69,8 +70,7 @@ align-items: center;
   display: flex;
   min-height: 79.5%;
   margin-left: 2.5%;
-  padding: 2%;
- 
+  padding: 2%; 
 }
 
 .options {
@@ -90,19 +90,19 @@ align-items: center;
 .options p {
   font-size: 25px;
   font-family: 'Krona One';
+  margin-top: 1%;
   text-align: center;
 }
 
 .options button {
   margin-left: 45px;
-  margin-top: 2%;
+  margin-top: 1.5%;
   /* opacity: 50%; */
   padding: 8px;
   width: 180px;
 }
 
 .options button:hover {
-  /* box-shadow: 0 3px 1em black; */
   font-size: 15px;
   height: 35px;
   width: 190px;
@@ -113,7 +113,7 @@ align-items: center;
   flex-direction: column;
   height: 30px;
   /* opacity: 50%; */
-  width: 190px;
+  width: 195px;
 }
 
 .options select {
@@ -136,7 +136,6 @@ align-items: center;
 
 .div-table {
   display: flex;
-
   width: 100%;
 }
 
@@ -158,22 +157,22 @@ thead {
 }
 
 tr {
-  align-items: center;
   background-color:#682694;
   border-radius: 10px;
+  height: 50px;
+  margin-top: 10px;
   width: 100%;
 }
 
 th {
   padding: 5px;
   width: 11%;
-  border: 1px solid red;
 }
 
 td {
   background-color:#682694;
-  border: 1px solid red;
   border-radius: 10px;
+  max-width: 150px;
   padding: 5px;
   text-align: center;
   width: 5%;
@@ -186,33 +185,3 @@ tbody {
   gap:10px;
   width: 100%;
 }
-
-/* .table {
-  border: 1px solid rgb(221, 225, 221);
-  border-radius: 15px;
-  min-height: 562px;
-  padding: 2%;
-  width: 100%;
-}
-
-th , td {
-  border: 1px solid red;
-  color:whitesmoke;
-  padding: 10px 20px;
-  text-align: center;
-}
-
-.btn-icons {
-  color:whitesmoke;
-  display: flex;
-  flex-direction: row;
-  gap: 15px;
-  justify-content: center;
-}
-
-/* tr:hover { background-color: whitesmoke;} */
-
-/* th {
-  background-color:#682694;
-  color:whitesmoke;
-}  */
